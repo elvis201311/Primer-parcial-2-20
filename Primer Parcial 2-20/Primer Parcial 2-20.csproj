@@ -20,6 +20,7 @@
     <Folder Include="DAL\" />
     <Folder Include="BLL\" />
     <Folder Include="DATA\" />
+    <Folder Include="Entidades\" />
     <Folder Include="UI\Registro\" />
   </ItemGroup>
 
