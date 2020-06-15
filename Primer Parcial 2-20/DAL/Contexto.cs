@@ -7,7 +7,7 @@ namespace Primer_Parcial_2_20.DAL
 {
    public class Contexto : DbContext 
     {
-        public DbSet<Entidades.Usuarios> Usuarios { get; set; }
+       // public DbSet<Entidades.Usuarios> Usuarios { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuider)
