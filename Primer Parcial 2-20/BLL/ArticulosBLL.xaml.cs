@@ -10,14 +10,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Primer_Parcial_2_20.UI.Registro
+namespace Primer_Parcial_2_20.BLL
 {
     /// <summary>
-    /// Interaction logic for rUsuarios.xaml
+    /// Interaction logic for ArticulosBLL.xaml
     /// </summary>
-    public partial class rUsuarios : Window
+    public partial class ArticulosBLL : Window
     {
-        public rUsuarios()
+        public ArticulosBLL()
         {
             InitializeComponent();
         }

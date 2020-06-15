@@ -1,15 +1,12 @@
-﻿<Window x:Class="Primer_Parcial_2_20.MainWindow"
+﻿<Window x:Class="Primer_Parcial_2_20.BLL.ArticulosBLL"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Primer_Parcial_2_20"
+        xmlns:local="clr-namespace:Primer_Parcial_2_20.BLL"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="ArticulosBLL" Height="450" Width="800">
     <Grid>
-        <Grid/>
-
+        
     </Grid>
 </Window>
-    
-    

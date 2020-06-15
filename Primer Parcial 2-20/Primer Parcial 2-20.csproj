@@ -17,8 +17,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="BLL\" />
     <Folder Include="DATA\" />
+    <Folder Include="UI\Registro\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DATA\Usuarios.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
