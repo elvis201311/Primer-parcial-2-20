@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <Folder Include="DAL\" />
+    <Folder Include="BLL\" />
     <Folder Include="UI\Registro\" />
   </ItemGroup>
 
