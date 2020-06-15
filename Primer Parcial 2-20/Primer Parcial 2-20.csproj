@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <Folder Include="DATA\" />
-    <Folder Include="UI\Registro\" />
   </ItemGroup>
 
   <ItemGroup>

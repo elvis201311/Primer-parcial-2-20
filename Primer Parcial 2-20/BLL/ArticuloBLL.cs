@@ -35,14 +35,14 @@ namespace Primer_Parcial_2_20.BLL
             }
 
             //Metodo Insertar 
-            private static bool Insertar(Entidades.Articulos usuarios)
+            private static bool Insertar(Entidades.Articulos Articulo)
             {
                 bool key = false;
                 Contexto contexto = new Contexto();
 
                 try
                 {
-                    contexto.Articulos.Add(usuarios);
+                    contexto.Articulos.Add(Articulo);
                     key = contexto.SaveChanges() > 0;
                 }
                 catch (Exception)
