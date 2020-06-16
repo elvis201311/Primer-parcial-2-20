@@ -5,47 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Primer_Parcial_2_20.UI.Registro"
         mc:Ignorable="d"
-        Title="rArticulos" Height="400" Width="300">
+        Title="rArticulos" Height="400" Width="400">
     <Grid>
-        <StackPanel Orientation="Vertical" Margin="10,0,0,0">
-
-            <StackPanel Orientation="Vertical">
-                <Label Content="Producto Id:" />
-
-                <StackPanel Orientation="Horizontal" >
-                    <TextBox x:Name="UsuarioIdTextBox" Text="{Binding UsuarioId}" Width="100"  Height="18" />
-                    <Button x:Name="BuscarButton" Margin="10,0" Click="BuscarButton_Click" Height="30">
-                        <StackPanel Orientation="Horizontal" >
-                            <Label Content="Buscar" />
-                        </StackPanel>
-                    </Button>
-                </StackPanel>
-                <Label Content="Descripcion:" />
-                <TextBox x:Name="NombreTextBox" Text="{Binding Nombre}" />
-
-                <Label Content="Existecia:"/>
-                <Label Content="Costo">
-                </Label>
-                <Label Content="Valor Inventario"></Label>
-
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal" Margin="0,15" >
-                <Button x:Name="NuevoButton" Margin="5,0" Click="NuevoButton_Click" >
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Content="Id Articulo" FontWeight="Bold"/>
+            <StackPanel Orientation="Horizontal" Height="30">
+                <TextBox x:Name="IdArticuloTextbox" Text="{Binding IdArticulo}" Width="230" FontSize="18" FontWeight="Bold" VerticalContentAlignment="Center"/>
+                <Button x:Name="BuscarButton" Margin="50,0,0,0" Width="120" Click="BuscarButton_Click">
                     <StackPanel Orientation="Horizontal">
-                        <Label Content="Nuevo" />
+                        <Label Content="Buscar" FontSize="14" FontWeight="Bold"/>
                     </StackPanel>
                 </Button>
-                <Button x:Name="GuardarButton"   Margin="5,0" Click="GuardarButton_Click">
+            </StackPanel>
+            <Label Content="Descripcion" FontWeight="Bold"/>
+            <TextBox x:Name="DescripcionTextBox" Height="30"/>
+            <Label Content="Existencia" FontWeight="Bold"/>
+            <TextBox x:Name="ExistenciaTextBox" Height="30"/>
+            <Label Content="Costo" FontWeight="Bold"/>
+            <TextBox x:Name="CostoTextBox" Height="30"/>
+            <Label Content="Valor Inventario" FontWeight="Bold"/>
+            <TextBox x:Name="ValorInventarioTextBox" Height="30"/>
+            <StackPanel Orientation="Horizontal" Height="35" Margin="0,15,0,0">
+                <Button x:Name="NuevoButton" Click="NuevoButton_Click" Width="120">
                     <StackPanel Orientation="Horizontal">
-                        <Label Content="Guardar" />
+                        <Label Content="Nuevo" FontSize="17" FontWeight="Bold"/>
                     </StackPanel>
                 </Button>
-                <Button x:Name="EliminarButton"  Margin="5,0" Click="EliminarButton_Click">
-                    <Label Content="Eliminar" />
+                
+                <Button x:Name="GuardarButton" Click="GuardarButton_Click" Width="120" Margin="20,0,0,0" >
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Guardar" FontSize="17" FontWeight="Bold"/>
+                    </StackPanel>
+                </Button>
+               
+                <Button x:Name="EliminarButton" Click="EliminarButton_Click" Width="120" Margin="20,0,0,0" >
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Eliminar" FontSize="17" FontWeight="Bold"/>
+                    </StackPanel>
                 </Button>
             </StackPanel>
-
+           
         </StackPanel>
 
     </Grid>

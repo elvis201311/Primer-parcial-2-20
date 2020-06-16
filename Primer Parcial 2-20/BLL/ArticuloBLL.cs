@@ -169,5 +169,10 @@ namespace Primer_Parcial_2_20.BLL
                 return lista;
             }
         }
+
+        internal static bool Eliminar(int v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
