@@ -9,7 +9,7 @@ namespace Primer_Parcial_2_20.Migrations
 {
     [DbContext(typeof(Contexto))]
     [Migration("20200615230533_inicial")]
-    partial class inicial
+    partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

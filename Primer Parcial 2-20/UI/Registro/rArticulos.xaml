@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Primer_Parcial_2_20.UI.Registro"
         mc:Ignorable="d"
         Title="rArticulos" Height="400" Width="400">
+    
     <Grid>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label Content="Id Articulo" FontWeight="Bold"/>

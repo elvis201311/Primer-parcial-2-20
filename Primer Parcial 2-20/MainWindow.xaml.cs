@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Primer_Parcial_2_20.UI.Registro;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,17 @@ namespace Primer_Parcial_2_20
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            rArticulos rArticulo = new rArticulos();
+            rArticulo.Show();
+        }
     }
 }
+  
