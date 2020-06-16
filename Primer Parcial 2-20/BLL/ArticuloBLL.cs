@@ -80,23 +80,13 @@ namespace Primer_Parcial_2_20.BLL
             }
 
             //Metodo Guardar.
-            public static bool Guardar(Entidades.Articulos usuarios)
+            public static bool Guardar(Articulos articulos)
             {
-                if (!Existe(usuarios.ProductoId))
-                {
-                    return Insertar(usuarios);
-                }
+                if (!Existe(articulos.ProductoId))
+                    return Insertar(articulos);
                 else
-                {
-                    return Modificar(usuarios);
-                }
+                    return Modificar(articulos);
             }
-
-            private static bool Existe(object usuarioId)
-            {
-                throw new NotImplementedException();
-            }
-
             //Metodo Eliminar.
             public static bool Eliminar(int Id)
             {
@@ -170,7 +160,7 @@ namespace Primer_Parcial_2_20.BLL
             }
         }
 
-        internal static bool Eliminar(int v)
+        internal static object Buscar(object p)
         {
             throw new NotImplementedException();
         }
