@@ -43,7 +43,19 @@ namespace Primer_Parcial_2_20.UI.Registro
                 Validado = false;
                 MessageBox.Show("Transaccion Errada", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
+            else if (DescripcionTextBox.Text.Length == 0 || IdArticuloTextbox.Text.Length == 0 || ExistenciaTextBox.Text.Length == 0 || CostoTextBox.Text.Length == 0)
+
+            {
+                Validado = false;
+
+                MessageBox.Show("Hay Campos vacìos, Revise los campos y vuelva a intentarlo", "Fallo",
+                MessageBoxButton.OK, MessageBoxImage.Warning);
+
+
+            }
+
             return Validado;
+
         }
         private void BuscarButton_Click(object sender, RoutedEventArgs e)
         {
