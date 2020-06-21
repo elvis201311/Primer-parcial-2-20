@@ -18,12 +18,7 @@
 
   <ItemGroup>
     <Folder Include="DATA\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="DATA\Usuarios.db">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

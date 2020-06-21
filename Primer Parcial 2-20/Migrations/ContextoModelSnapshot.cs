@@ -21,10 +21,16 @@ namespace Primer_Parcial_2_20.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("Costo")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Descripcion")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("ValorInvetario")
+                    b.Property<int>("Existecia")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Valorinvetario")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("ProductoId");

@@ -10,7 +10,7 @@ namespace Primer_Parcial_2_20.Entidades
         [Key]
         public int ProductoId { get; set; }
         public string Descripcion { get; set; }
-        public int ValorInvetario { get; set; }
+        public int Existecia { get; set; }
         public int Costo { get; set; }
         public int Valorinvetario { get; set; }
     } 

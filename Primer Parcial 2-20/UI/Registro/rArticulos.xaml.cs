@@ -15,7 +15,7 @@ using Microsoft.EntityFrameworkCore;
 using Primer_Parcial_2_20.BLL;
 using Primer_Parcial_2_20.DAL;
 using Primer_Parcial_2_20.Entidades;
-using PrimerParcial_JoseLuis.BLL;
+using PrimerParcial_E.BLL;
 
 namespace Primer_Parcial_2_20.UI.Registro
 {
@@ -101,7 +101,8 @@ namespace Primer_Parcial_2_20.UI.Registro
             {
                 int a = int.Parse(ExistenciaTextBox.Text);
                 int b = int.Parse(CostoTextBox.Text);
-                ValorInventarioTextBox.Text = add(a, b).ToString();
+                int v = a * b;
+                ValorInventarioTextBox.Text = Convert.ToString(v);
             }
             catch
             {
@@ -112,9 +113,25 @@ namespace Primer_Parcial_2_20.UI.Registro
         {
             try
             {
-                double a = Convert.ToDouble(ExistenciaTextBox.Text);
-                double b = Convert.ToDouble(CostoTextBox.Text);
-                ValorInventarioTextBox.Text = "$ " + add(a, b).ToString();
+                int a = int.Parse(ExistenciaTextBox.Text);
+                int b = int.Parse(CostoTextBox.Text);
+                int v = a * b;
+                ValorInventarioTextBox.Text = Convert.ToString(v);
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void ValorInventarioTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                int a = int.Parse(ExistenciaTextBox.Text);
+                int b = int.Parse(CostoTextBox.Text);
+                int v = a * b;
+                ValorInventarioTextBox.Text = Convert.ToString(v);
             }
             catch
             {

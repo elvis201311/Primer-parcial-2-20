@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PrimerParcial_JoseLuis.BLL
+namespace PrimerParcial_E.BLL
 {
     public class Utilidades
     {

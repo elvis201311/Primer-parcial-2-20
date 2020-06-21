@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Primer_Parcial_2_20.UI.Registro"
         mc:Ignorable="d"
-        Title="rArticulos" Height="400" Width="400">
+        Title="Registro Articulos" Height="400" Width="430">
     
     <Grid>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -25,7 +25,7 @@
             <Label Content="Costo" FontWeight="Bold"/>
             <TextBox x:Name="CostoTextBox" Text="{Binding Costo}" Height="30" TextChanged="CostoTextBox_TextChanged" VerticalContentAlignment="Center"/>
             <Label Content="Valor Inventario" FontWeight="Bold"/>
-            <TextBox x:Name="ValorInventarioTextBox" Height="30" IsReadOnly="True" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="ValorInventarioTextBox" Text="{Binding Valorinvetario}" Height="30" IsReadOnly="True" VerticalContentAlignment="Center" TextChanged="ValorInventarioTextBox_TextChanged"/>
             <StackPanel Orientation="Horizontal" Height="35" Margin="0,15,0,0">
                 <Button x:Name="NuevoButton" Click="NuevoButton_Click" Width="120">
                     <StackPanel Orientation="Horizontal">

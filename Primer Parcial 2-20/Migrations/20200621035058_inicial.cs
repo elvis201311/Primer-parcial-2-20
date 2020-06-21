@@ -2,7 +2,7 @@
 
 namespace Primer_Parcial_2_20.Migrations
 {
-    public partial class Inicial : Migration
+    public partial class inicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,7 +13,9 @@ namespace Primer_Parcial_2_20.Migrations
                     ProductoId = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Descripcion = table.Column<string>(nullable: true),
-                    ValorInvetario = table.Column<int>(nullable: false)
+                    Existecia = table.Column<int>(nullable: false),
+                    Costo = table.Column<int>(nullable: false),
+                    Valorinvetario = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

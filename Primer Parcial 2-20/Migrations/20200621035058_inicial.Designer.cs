@@ -8,8 +8,8 @@ using Primer_Parcial_2_20.DAL;
 namespace Primer_Parcial_2_20.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20200615230533_inicial")]
-    partial class Inicial
+    [Migration("20200621035058_inicial")]
+    partial class inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,10 +23,16 @@ namespace Primer_Parcial_2_20.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("Costo")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Descripcion")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("ValorInvetario")
+                    b.Property<int>("Existecia")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Valorinvetario")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("ProductoId");
